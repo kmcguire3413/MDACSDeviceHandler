@@ -1,0 +1,1 @@
+Using LibUsbDotNet, this project switches the BC-300 into mass storage mode from configuration mode. It requires that the WINUSB is installed for the device's configuration mode vendor and product USB identifiers.
