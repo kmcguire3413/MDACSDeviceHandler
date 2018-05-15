@@ -216,7 +216,12 @@ namespace MDACSCameraStorageHandler
             {
                 data = JsonConvert.DeserializeObject<ListTTLPersistentData>(File.ReadAllText(path));
 
-                if (data == null || data.items == null)
+                if (data == null)
+                {
+                    data = new ListTTLPersistentData();
+                }
+                    
+                if (data.items == null)
                 {
                     data.items = new List<ListTTLItem>();
                 }
